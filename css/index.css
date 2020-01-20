@@ -19,10 +19,10 @@ background-color: blue
 	padding-top:100px ; 
 }
 .img-circle{
-	border: solid 5px red;
+	border: solid 5px black;
 	border-radius: 50%;
-	width:180px;
-	 height: 180px;
+	width:220px;
+	 height: 220px;
 
 }
 .media-heading{
