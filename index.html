@@ -26,14 +26,34 @@
     <link rel="stylesheet" href="css/flaticon.css">
     <link rel="stylesheet" href="css/icomoon.css">
     <link rel="stylesheet" href="css/style.css">
+
+<style>
+  .no-js #loader { display: none;  }
+  .js #loader { display: block; position: absolute; left: 100px; top: 0; }
+  .se-pre-con {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    
+    background: url(images/loading.gif) center no-repeat rgb(252, 250, 250);
+  }
+</style>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
+<script>
+	$(window).load(function() {
+		$(".se-pre-con").fadeOut("slow");;
+	});
+</script>
+
   </head>
   <body>
 
-    <div class="KW_progressContainer">
-      <div class="KW_progressBar">
-
-      </div>
-    </div>
+    <div  class="se-pre-con"></div>
     <div class="page">
     <nav id="colorlib-main-nav" role="navigation">
       <a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle active"><i></i></a>
@@ -336,7 +356,12 @@
 
     </div>
 
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <script>
+      $(window).load(function() {
+        $(".se-pre-con").fadeOut("slow");;
+      });
+    </script>
     <script src="js/jquery.min.js"></script>
     <script src="js/jquery-migrate-3.0.1.min.js"></script>
     <script src="js/popper.min.js"></script>
